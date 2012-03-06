@@ -2,10 +2,9 @@ xml2graphml is a Python script that translates XML format social
 network definitions in the popular graphml format.
 
 There are some programs that allow you to export social network
-definition files (nodes and edges) in XML format e.g. AutoMap by CASOS
-<http://www.casos.cs.cmu.edu/projects/automap/index.php>. This script
-allows to translate the XML output to graphml that can be processed by
-most social network analysis programs.
+definition files (nodes and edges) in XML format. This script allows
+to translate the XML output to graphml that can be processed by most
+social network analysis programs.
 
 Example:
 
