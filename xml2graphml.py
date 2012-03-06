@@ -5,8 +5,12 @@ import sys
 from BeautifulSoup import BeautifulStoneSoup as BSS
 import codecs
 
-filename = sys.argv[1]
-output = sys.argv[2]
+try:
+    filename = sys.argv[1]
+    output = sys.argv[2]
+except IndexError:
+    print "Usage: xml2graphml.py <Input> <Output>"
+    sys.exit(2)
 
 print "Reading " + filename
 file = open(filename)
@@ -17,8 +21,6 @@ print "Parsing data"
 
 nodes = []
 frequency = {}
-i=0
-out = ''
 
 soup = BSS(xml)
 
